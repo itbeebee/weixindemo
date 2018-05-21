@@ -4,4 +4,4 @@
 
 
 欢迎大家一起讨论共同学习，喜欢的可以扫一下
-![image](https://github.com/itbeebee/weixindemo/blob/master/src/main/webapp/images/itbee.jpg =100x100)
+ <img src="https://github.com/itbeebee/weixindemo/blob/master/src/main/webapp/images/itbee.jpg" width = "100" height = "100" alt="图片名称" align=center />
