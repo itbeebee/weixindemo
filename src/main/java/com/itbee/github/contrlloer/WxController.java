@@ -107,18 +107,13 @@ public class WxController  {
         try {
         	
             wxMpOAuth2AccessToken = wxMpService.oauth2getAccessToken(code);
+            String openId = wxMpOAuth2AccessToken.getOpenId();
+            System.out.println("openId:"+openId);
 
-            System.out.println("授权scope:"+wxMpOAuth2AccessToken.getScope());
-            System.out.println("授权过期时间:"+wxMpOAuth2AccessToken.getExpiresIn());
         } catch (WxErrorException e) {
            e.printStackTrace();
         }
-        
-      String openId = wxMpOAuth2AccessToken.getOpenId();
-      request.getSession().setAttribute("openId", openId);
-     
-     
-       
+
         return "redirect:"+ returnUrl;
     }
     /**
